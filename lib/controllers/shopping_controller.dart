@@ -15,20 +15,20 @@ class ShoppingController extends GetxController {
     var productResult = [
       Product(
           id: 1,
-          productName: 'Product 1',
-          productImage: 'abc',
+          productName: 'Oranges',
+          productImage: 'Slice and take every 4pm',
           price: 300,
           productDescription: 'Product Description 1'),
       Product(
           id: 2,
-          productName: 'Product 2',
-          productImage: 'abd',
+          productName: 'Apples',
+          productImage: 'Eat in the evening while reading',
           price: 500,
           productDescription: 'Product Description 2'),
       Product(
           id: 3,
-          productName: 'Product 3',
-          productImage: 'abe',
+          productName: 'Limes',
+          productImage: 'Squeeze in your tea to make a warm tea limeade',
           price: 700,
           productDescription: 'Product Description 3'),
     ];
