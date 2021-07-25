@@ -16,21 +16,34 @@ class ShoppingController extends GetxController {
       Product(
           id: 1,
           productName: 'Oranges',
-          productImage: 'Slice and take every 4pm',
+          productImage: 'img1',
           price: 300,
-          productDescription: 'Product Description 1'),
+          productDescription: 'Slice and take every 4pm'),
       Product(
           id: 2,
           productName: 'Apples',
-          productImage: 'Eat in the evening while reading',
+          productImage: 'img2',
           price: 500,
-          productDescription: 'Product Description 2'),
+          productDescription: 'Eat in the evening while reading'),
       Product(
           id: 3,
           productName: 'Limes',
-          productImage: 'Squeeze in your tea to make a warm tea limeade',
+          productImage: 'img3',
           price: 700,
-          productDescription: 'Product Description 3'),
+          productDescription: 'Squeeze in your tea to make a warm tea limeade'),
+      Product(
+          id: 4,
+          productName: 'Dates',
+          productImage: 'img3',
+          price: 900,
+          productDescription: 'Squeeze in your tea to make a warm tea limeade'),
+      Product(
+          id: 4,
+          productName: 'Bananas',
+          productImage: 'img4',
+          price: 900,
+          productDescription:
+              'I heard it helps with sperm count, but I\'ll need to check'),
     ];
 
     products.assignAll(productResult);

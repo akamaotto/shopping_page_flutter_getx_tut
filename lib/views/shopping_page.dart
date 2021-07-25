@@ -45,26 +45,28 @@ class ShoppinPage extends StatelessWidget {
                     });
               }),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 10.0),
-              child: Text(
-                "Total Price",
-                style: TextStyle(color: Colors.white, fontSize: 16),
-              ),
-            ),
-            GetX<CartController>(
-              builder: (controller) {
-                return Text(
-                  "\$${controller.totalPrice.toInt()}",
-                  style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 50,
-                      fontWeight: FontWeight.bold),
-                );
-              },
+            Column(
+              children: [
+                const Padding(
+                  padding: EdgeInsets.only(top: 50.0, bottom: 10),
+                  child: Text(
+                    "Total Price",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+                ),
+                Obx(
+                  () => Text(
+                    "\$${cartController.totalPrice.toInt()}",
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold),
+                  ),
+                )
+              ],
             ),
             const SizedBox(
-              height: 70,
+              height: 50,
             ),
           ],
         ),
